@@ -1,13 +1,18 @@
-# Информационный сайт Local YouTube Shorts
+# Local YouTube Shorts
 
-Планируемый репозиторий: `dzekovdzek/local-shorts-info`.
+Информационный сайт личного локального загрузчика готовых MP4 в YouTube.
 
-Публикуются только `index.html`, `privacy.html`, `terms.html`, `style.css`, `.nojekyll` и этот README. Здесь нет загрузчика, видео, OAuth client JSON, токенов, Channel ID или журнала загрузок. Не копируйте сюда папку youtube-shorts.
+Сайт: https://dzekovdzek.github.io/local-shorts-info/
 
-Страницы статические и не требуют сборки или зависимостей. Ссылки относительные, подходят для GitHub Pages с project path. Предлагаемый адрес: `https://dzekovdzek.github.io/local-shorts-info/`; до успешного развёртывания он не считается существующим.
+- Главная: index.html
+- Политика конфиденциальности: privacy.html
+- Условия использования: terms.html
+- Оформление: style.css
 
-После публикации через Settings → Pages → Deploy from a branch → main → /(root) проверить три страницы по HTTPS без входа. Затем добавить URL-prefix property в Google Search Console под Google-аккаунтом владельца Cloud Project. Разместить выданный Google HTML-файл без изменения имени/содержимого или meta-тег в index.html. Файл/тег проверки нельзя удалять после подтверждения.
+Статические страницы без сборки, зависимостей, форм входа и приёма файлов. GitHub Pages публикует main из корня репозитория, HTTPS включён.
 
-После подтверждения владения проверить, принимает ли Google Auth Platform поддомен `dzekovdzek.github.io` в Authorized domains. Добавить точные homepage, privacy и terms URL в Branding. GitHub Pages и проверка URL-prefix сами по себе не гарантируют приём домена в OAuth: результат нужно проверить в Console. Не добавлять общий домен github.io как будто он принадлежит пользователю.
+В репозитории нет программы загрузчика, видео, OAuth client JSON, токенов, Channel ID, Google-почты или журнала загрузок. Не копируйте сюда локальную папку загрузчика.
 
-Репозиторий и сайт будут публичными. Публикация, подтверждение владения и переход OAuth в Production — отдельные действия; их результаты необходимо подтвердить. Видео от этого не становятся публичными.
+В index.html находится публичный meta-тег Google Search Console. Он подтверждает владение сайтом; его нужно сохранять при изменениях страницы. Он не является OAuth-токеном и не даёт посетителям доступ к YouTube-каналу.
+
+Точные адреса главной, privacy.html и terms.html внесены в OAuth Branding. Поддомен dzekovdzek.github.io принят в Authorized domains. Публикация этого информационного сайта и статус OAuth-приложения не меняют приватность видео.
